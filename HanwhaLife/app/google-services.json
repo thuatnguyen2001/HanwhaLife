@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1036980708209",
+    "firebase_url": "https://hanwhalife-5d32c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hanwhalife-5d32c",
+    "storage_bucket": "hanwhalife-5d32c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036980708209:android:4d082e054eef9264850cd0",
+        "android_client_info": {
+          "package_name": "com.example.hanwhalife"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs9pCwiUsZvq-K3hdBo1OOtz8K8ilo5RI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
