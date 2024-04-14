@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:src="@drawable/logo" />
+
+
+    <EditText
+        android:id="@+id/et_username"
+        android:hint="Tài khoản"
+        android:background="@drawable/textfield_login"
+        android:layout_gravity="center"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:hint="Mật khẩu"
+        android:background="@drawable/textfield_login"
+        android:drawableEnd="@drawable/eye_icon"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:id="@+id/rememberlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ghi nhớ đăng nhập" />
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:text="Bạn quên tài khoản ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
