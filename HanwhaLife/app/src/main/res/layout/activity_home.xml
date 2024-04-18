@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ServiceActivity">
+    tools:context=".HomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="horizontal"
         android:layout_height="50dp">
 
         <ImageView
-            android:id="@+id/logo"
             android:layout_marginLeft="30dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+            android:contentDescription="TODO" />
 
         <TextView
-            android:id="@+id/appName"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Hanwhan Life+"
+            android:text="Hanwha Life+"
             android:gravity="center"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
@@ -37,7 +36,8 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/giadinh" />
+        android:src="@drawable/giadinh"
+        android:contentDescription="TODO" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -47,10 +47,13 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="0dp"
+            android:gravity="center"
             android:layout_height="100dp">
 
             <LinearLayout
-                android:id="@+id/item1"
+                android:id="@+id/itemGQQL"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -58,24 +61,21 @@
                 android:layout_height="100dp">
 
                 <ImageView
-                    android:id="@+id/icon_1"
                     android:layout_gravity="center"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/library_icon" />
+                    android:src="@drawable/bag_icon" />
 
                 <TextView
-                    android:id="@+id/title_1"
-                    android:text="Thư viện thư điện tử"
+                    android:text="Giải quyết quyền lợi bảo hiểm"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
-
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/item2"
+                android:id="@+id/itemThanhToan"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -83,14 +83,12 @@
                 android:layout_height="100dp">
 
                 <ImageView
-                    android:id="@+id/icon_2"
                     android:layout_gravity="center"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/pay_icon" />
 
                 <TextView
-                    android:id="@+id/title_2"
                     android:text="Thanh toán"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
@@ -99,14 +97,15 @@
             </LinearLayout>
 
         </LinearLayout>
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
             android:layout_height="100dp">
 
             <LinearLayout
-                android:id="@+id/item3"
+                android:id="@+id/itemDieuChinhTTCN"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -114,70 +113,12 @@
                 android:layout_height="100dp">
 
                 <ImageView
-                    android:id="@+id/icon_3"
-                    android:layout_gravity="center"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/bag_icon" />
-
-                <TextView
-                    android:id="@+id/title_3"
-                    android:text="Giải quyết quyền lợi bảo hiểm"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/item4"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="100dp">
-
-                <ImageView
-                    android:id="@+id/icon_4"
-                    android:layout_gravity="center"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/money_icon" />
-
-                <TextView
-                    android:id="@+id/title_4"
-                    android:text="Tạm ứng giá trị hoàn lại"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:id="@+id/item5"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="100dp">
-
-                <ImageView
-                    android:id="@+id/icon_5"
                     android:layout_gravity="center"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/account_icon" />
 
                 <TextView
-                    android:id="@+id/title_5"
                     android:text="Điều chỉnh thông tin cá nhân"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
@@ -187,7 +128,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/item6"
+                android:id="@+id/itemDieuChinhHD"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -195,14 +136,12 @@
                 android:layout_height="100dp">
 
                 <ImageView
-                    android:id="@+id/icon_6"
                     android:layout_gravity="center"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/list_icon" />
 
                 <TextView
-                    android:id="@+id/title_6"
                     android:text="Điều chỉnh hợp đồng"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
@@ -212,13 +151,17 @@
 
         </LinearLayout>
 
+
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
             android:layout_height="100dp">
 
             <LinearLayout
-                android:id="@+id/item7"
+                android:id="@+id/itemChamSoc"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -226,14 +169,12 @@
                 android:layout_height="100dp">
 
                 <ImageView
-                    android:id="@+id/icon_7"
                     android:layout_gravity="center"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/cs_icon" />
 
                 <TextView
-                    android:id="@+id/title_7"
                     android:text="Chăm sóc khách hàng"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
@@ -243,7 +184,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/item8"
+                android:id="@+id/itemThuVien"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -251,15 +192,13 @@
                 android:layout_height="100dp">
 
                 <ImageView
-                    android:id="@+id/icon_8"
                     android:layout_gravity="center"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/confirmdoc_icon" />
+                    android:src="@drawable/library_icon" />
 
                 <TextView
-                    android:id="@+id/title_8"
-                    android:text="Xác nhận hợp đồng bảo hiểm"
+                    android:text="Thư viện thư điện tử"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
