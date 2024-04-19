@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HanwhaLife</string>
+    <string name="action_home">Trang chủ</string>
+    <string name="action_dichvu">Dịch vụ</string>
+    <string name="action_hopdong">Hợp đồng</string>
+    <string name="action_khac">Khác</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

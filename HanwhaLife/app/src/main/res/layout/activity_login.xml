@@ -5,18 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".LoginActivity">
 
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginTop="50dp"
         android:src="@drawable/logo" />
 
 
     <EditText
-        android:id="@+id/et_username"
+        android:id="@+id/edtUserName"
         android:hint="Tài khoản"
         android:background="@drawable/textfield_login"
         android:layout_gravity="center"
@@ -25,18 +29,35 @@
         android:layout_width="350dp"
         android:layout_height="50dp"/>
 
-    <EditText
-        android:id="@+id/et_password"
-        android:hint="Mật khẩu"
-        android:background="@drawable/textfield_login"
-        android:drawableEnd="@drawable/eye_icon"
+    <LinearLayout
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:background="@drawable/textfield_login"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="25dp"
-        android:paddingRight="15dp"
-        />
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/edtPassword"
+            android:hint="Mật khẩu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:layout_gravity="center"
+            android:paddingLeft="25dp"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:paddingRight="15dp" />
+        <ImageButton
+            android:id="@+id/btnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/visible"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -45,28 +66,32 @@
         android:layout_height="50dp">
 
         <CheckBox
-            android:id="@+id/rememberlogin"
+            android:id="@+id/ckbLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
             android:text="Ghi nhớ đăng nhập" />
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnLogin"
         android:background="@drawable/button"
         android:text="Đăng nhập"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="50dp"/>
 
     <TextView
-        android:id="@+id/forgotPassword"
+        android:id="@+id/txtQuenMK"
         android:textSize="18dp"
         android:layout_gravity="center"
-        android:text="Bạn quên tài khoản ?"
+        android:text="Bạn quên tài khoản?"
         android:layout_width="wrap_content"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         />

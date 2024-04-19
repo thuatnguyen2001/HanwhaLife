@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/mn_home"
+        android:id="@+id/itemHome"
         android:icon="@drawable/home_icon"
         android:title="Trang chủ"/>
     <item
-        android:id="@+id/mn_list"
+        android:id="@+id/itemDichVu"
         android:icon="@drawable/service_icon"
         android:title="Dịch vụ"/>
     <item
-        android:id="@+id/mn_tk"
+        android:id="@+id/itemHopDong"
         android:icon="@drawable/list_icon"
         android:title="Hợp đồng"/>
     <item
-        android:id="@+id/mn_dsuser"
+        android:id="@+id/itemKhac"
         android:icon="@drawable/orther_icon"
         android:title="Khác"/>
 </menu>
