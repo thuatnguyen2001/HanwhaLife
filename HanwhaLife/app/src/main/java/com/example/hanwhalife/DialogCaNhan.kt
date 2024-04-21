@@ -1,5 +1,6 @@
 package com.example.hanwhalife
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -32,7 +33,9 @@ class DialogCaNhan : BottomSheetDialogFragment() {
         }
 
         btnNewYeuCau.setOnClickListener {
-            Toast.makeText(this.context,"new",Toast.LENGTH_SHORT).show()
+            val intent = Intent(activity, DieuChinhCaNhanActivity::class.java)
+            startActivity(intent)
+            this.dismiss()
         }
 
         btnListYeuCau.setOnClickListener {
