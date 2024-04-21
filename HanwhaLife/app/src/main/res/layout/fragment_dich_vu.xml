@@ -4,30 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#ECEBEB"
     tools:context=".DichVuFragment">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:contentDescription="TODO"
-            android:scaleType="fitXY"
-            android:src="@drawable/logo1" />
-
-
-    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageApp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="20dp"
+
         android:scaleType="fitXY"
         android:contentDescription="TODO"
         android:src="@drawable/giadinh" />

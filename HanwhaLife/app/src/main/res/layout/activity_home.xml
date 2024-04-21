@@ -8,6 +8,14 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <FrameLayout
+        android:id="@+id/frameTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#838383"/>
 
     <FrameLayout
         android:id="@+id/frameMain"

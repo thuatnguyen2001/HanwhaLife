@@ -1,5 +1,6 @@
 package com.example.hanwhalife
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.Toast
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,6 +41,7 @@ class DichVuFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         anhXa(view)
         addEvent()
     }
@@ -60,7 +63,8 @@ class DichVuFragment : Fragment() {
 
     private fun xuLyChucNangChamSoc() {
         itemChamSoc.setOnClickListener{
-            Toast.makeText(this.context,"Chức năng này đang cập nhật", Toast.LENGTH_SHORT).show();
+            val intent = Intent(activity, ContactActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -72,13 +76,14 @@ class DichVuFragment : Fragment() {
 
     private fun xuLyChucNangDieuChinhTTCN() {
         itemDieuChinhTTCN.setOnClickListener{
-            Toast.makeText(this.context,"Chức năng này đang cập nhật", Toast.LENGTH_SHORT).show();
+            val bottomSheetDialogFragment = DialogCaNhan()
+            bottomSheetDialogFragment.show(parentFragmentManager, bottomSheetDialogFragment.tag)
         }
     }
 
     private fun xuLyChucNangThanhToan() {
         itemThanhToan.setOnClickListener{
-            Toast.makeText(this.context,"Chức năng này đang cập nhật", Toast.LENGTH_SHORT).show();
+
         }
     }
 

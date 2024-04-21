@@ -16,6 +16,12 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        val topFrame = TopLogoFragment()
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.frameTop,topFrame)
+            commit()
+        }
+
         val homeFrame = HomeFragment()
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.frameMain,homeFrame)
@@ -31,12 +37,22 @@ class HomeActivity : AppCompatActivity() {
                         replace(R.id.frameMain,homeFrame)
                         commit()
                     }
+                    val topFrame = TopLogoFragment()
+                    supportFragmentManager.beginTransaction().apply {
+                        replace(R.id.frameTop,topFrame)
+                        commit()
+                    }
                     true
                 }
                 R.id.itemDichVu ->{
                     val dichVuFrame = DichVuFragment()
                     supportFragmentManager.beginTransaction().apply {
                         replace(R.id.frameMain,dichVuFrame)
+                        commit()
+                    }
+                    val topFrame = TopLogoFragment()
+                    supportFragmentManager.beginTransaction().apply {
+                        replace(R.id.frameTop,topFrame)
                         commit()
                     }
                     true
@@ -48,6 +64,11 @@ class HomeActivity : AppCompatActivity() {
                         replace(R.id.frameMain,hopDongFrame)
                         commit()
                     }
+                    val topFrame = TopHopDongFragment()
+                    supportFragmentManager.beginTransaction().apply {
+                        replace(R.id.frameTop,topFrame)
+                        commit()
+                    }
                     true
                 }
 
@@ -55,6 +76,11 @@ class HomeActivity : AppCompatActivity() {
                     val otherFrame = OtherFragment()
                     supportFragmentManager.beginTransaction().apply {
                         replace(R.id.frameMain,otherFrame)
+                        commit()
+                    }
+                    val topFrame = TopLogoFragment()
+                    supportFragmentManager.beginTransaction().apply {
+                        replace(R.id.frameTop,topFrame)
                         commit()
                     }
                     true
