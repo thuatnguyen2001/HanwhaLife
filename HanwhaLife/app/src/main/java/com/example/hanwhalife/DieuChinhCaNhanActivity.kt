@@ -25,7 +25,11 @@ class DieuChinhCaNhanActivity : AppCompatActivity() {
             }
         }else
         {
-            Toast.makeText(this,value,Toast.LENGTH_SHORT).show()
+            val buoc2Frame = DieuChinhCaNhan2Fragment()
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.frameDieuChinh,buoc2Frame)
+                commit()
+            }
         }
 
 

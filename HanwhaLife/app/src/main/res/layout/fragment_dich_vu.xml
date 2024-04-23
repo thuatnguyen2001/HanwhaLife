@@ -34,7 +34,7 @@
             <LinearLayout
                 android:id="@+id/itemGQQL"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="140dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -66,7 +66,7 @@
             <LinearLayout
                 android:id="@+id/itemThanhToan"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="140dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -106,7 +106,7 @@
             <LinearLayout
                 android:id="@+id/itemDieuChinhTTCN"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="140dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -125,7 +125,6 @@
                     android:layout_marginHorizontal="20dp"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:inputType="textMultiLine"
                     android:text="Điều chỉnh thông tin cá nhân" />
 
 
@@ -137,7 +136,7 @@
             <LinearLayout
                 android:id="@+id/itemDieuChinhHD"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="140dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -178,7 +177,7 @@
             <LinearLayout
                 android:id="@+id/itemChamSoc"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="140dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -210,7 +209,7 @@
             <LinearLayout
                 android:id="@+id/itemThuVien"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="140dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
